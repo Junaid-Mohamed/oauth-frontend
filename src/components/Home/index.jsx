@@ -1,7 +1,7 @@
 export const Home = () => {
   const authenticateViaOAuth = async (method) => {
     try {
-      window.location.href = `${import.meta.env.VITE_SERVER_BASE_URL}/auth/${method}`;
+      window.location.href = `https://oauth-server-brown.vercel.app/auth/${method}`;
     } catch (error) {
       console.error(error);
     }
